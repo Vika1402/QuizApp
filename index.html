@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="h-[100vh] w-full bg-[#34495e] flex flex-col items-center pt-[100px]"
+    >
+      <h1 class="text-[34px] font-bold text-white p-5">
+        Quiz App Web Developmet
+      </h1>
+
+      <div class="w-[60%] bg-blue-200 rounded-xl">
+        <div id="bbox">
+          <h1 id="queBox" class="p-4">1) This is a summy question ?</h1>
+          <hr class="h-[4px] bg-gray-800" />
+          <div class="row flex flex-col gap-4 p-5">
+            <div>
+              <input
+                class="options"
+                id="option1"
+                type="radio"
+                value="a"
+                name="option"
+              />
+              <label for="option1"> Option 1</label>
+            </div>
+            <div>
+              <input
+                class="options"
+                id="option2"
+                type="radio"
+                value="b"
+                name="option"
+              />
+              <label for="option2"> Option 2</label>
+            </div>
+            <div>
+              <input
+                class="options"
+                id="option3"
+                type="radio"
+                value="c"
+                name="option"
+              />
+              <label for="option3"> Option 3</label>
+            </div>
+            <div>
+              <input
+                class="options"
+                id="option4"
+                type="radio"
+                value="d"
+                name="option"
+              />
+              <label for="option4"> Option 4</label>
+            </div>
+
+            <div class="flex justify-evenly">
+              <button
+                onclick="prev()"
+                class="bg-red-400 hover:bg-red-600 px-3 py-1"
+              >
+                Prev
+              </button>
+              <button
+                onclick="next()"
+                class="bg-blue-500 hover:bg-blue-600 px-3 py-1"
+              >
+                Next
+              </button>
+            </div>
+            <div>
+              <button
+                onclick="subbmitQuiz()"
+                class="w-full py-1 bg-white rounded-md"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
